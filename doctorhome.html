@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="doctorhome.css">
+</head>
+<body>
+
+        <div class="navbar">
+
+            <div class="left">
+                <img src="logo.png" alt="">
+                <h2>MediQueue</h2>
+            </div>
+
+            <div class="right">
+
+                <p>Dr Smith</p>
+                <button class="doctor_log_out"  id="doctor_logout"> <i class="ri-logout-box-r-line"></i> Logout</button>
+
+            </div>
+
+        </div>
+
+        <div class="main">
+
+            
+            <div class="top">
+
+                
+                <div class="card current-patient">
+                <div class="card-header">
+                    <span class="icon">👤</span>
+                    <h4>Current Patient</h4>
+                </div>
+
+                <div class="card-body empty">
+                    <div class="status-icon">🕒</div>
+                    <p class="title">No patient currently being served</p>
+                    <p class="subtitle">Click "Call Next" to start</p>
+                </div>
+                </div>
+
+                
+                <div class="card upcoming-patients">
+                <div class="card-header">
+                    <span class="icon">👥</span>
+                    <h4>Upcoming Patients</h4>
+                </div>
+
+                <div class="card-body empty">
+                    <div class="status-icon">👤</div>
+                    <p class="subtitle">Queue is empty</p>
+                </div>
+                </div>
+
+            </div>
+
+            
+            <div class="actions">
+                <button class="btn call-next">
+                📞 Call Next
+                </button>
+
+                <button class="btn skip">
+                ⏭ Skip / Absent
+                </button>
+            </div>
+
+            
+            <div class="stats">
+
+                <div class="stat-card">
+                <div class="stat-icon">👥</div>
+                <div class="stat-info">
+                    <h3>0</h3>
+                    <p>In Queue</p>
+                </div>
+                </div>
+
+                <div class="stat-card">
+                <div class="stat-icon danger">⚠️</div>
+                <div class="stat-info">
+                    <h3>0</h3>
+                    <p>Emergencies</p>
+                </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    
+</body>
+</html>
