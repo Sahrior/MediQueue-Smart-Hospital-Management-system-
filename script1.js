@@ -196,6 +196,26 @@ document.addEventListener("DOMContentLoaded", function (){
         })
     }
 
+    //--------Doctor Login  => Doctor page--------
+
+    const doctor_login_btn = document.getElementById("doctor_sign_in");
+
+    if(doctor_login_btn){
+        doctor_login_btn.addEventListener("click", function(){
+            window.location.href = "doctorhome.html"
+        })
+    }
+
+    //--------Doctor page  => Home page--------
+
+    const doctorlogout = document.getElementById("doctor_logout");
+
+    if(doctorlogout){
+        doctorlogout.addEventListener("click", function(){
+            window.location.href = "index.html"
+        })
+    }
+
     
 
 
