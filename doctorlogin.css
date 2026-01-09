@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background: #f4f6fa;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+}
+
+
+.left {
+    flex: 1 1 500px;
+    background: linear-gradient(135deg, #2b7a78, #3aafa9);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+}
+
+.left_top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.left_top img {
+    width: 36px;
+    border-radius: 8px;
+}
+
+.left_top h3 {
+    font-size: 1.4rem;
+}
+
+.left_middle h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+.left_middle p {
+    color: #e6fffa;
+    max-width: 420px;
+}
+
+.left_bottom {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.left_bottom > div {
+    flex: 1 1 120px;
+    min-width: 120px;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(10px);
+    border-radius: 14px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.left_bottom > div:hover {
+    transform: translateY(-6px);
+}
+
+
+.right {
+    flex: 1 1 500px;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+
+.main_card {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.change {
+    display: flex;
+    gap: 14px;
+}
+
+.change button {
+    flex: 1;
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #3aafa9, #2b7a78);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#doctor_login_btn {
+    background: linear-gradient(135deg, #6c6c6c, #8a8a8a);
+}
+
+.change button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.box h1 {
+    font-size: 1.6rem;
+}
+
+.box p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.email,
+.password {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+label {
+    font-size: 0.85rem;
+    color: #444;
+}
+
+input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #2b7a78;
+    box-shadow: 0 0 0 3px rgba(43,122,120,0.15);
+}
+
+
+.doctor_sign_in_btn {
+    display: flex;
+}
+
+.doctor_sign_in_btn button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 14px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(135deg, #3aafa9, #2b7a78);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.doctor_sign_in_btn button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+
+hr {
+    border: none;
+    height: 1px;
+    background: #ddd;
+}
+
+.others {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.down {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.down a {
+    text-decoration: none;
+    color: #2b7a78;
+    font-weight: 500;
+}
+
+
+@media (max-width: 900px) {
+    body {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        flex: 1 1 100%;
+    }
+
+    .left {
+        text-align: center;
+        align-items: center;
+    }
+
+    .left_middle p {
+        max-width: none;
+    }
+
+    .left_bottom {
+        justify-content: center;
+    }
+}
