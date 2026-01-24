@@ -21,7 +21,7 @@
 
             <div class="right">
 
-                <p>Dr Smith</p>
+                <p>Dr. <?php echo htmlspecialchars($_SESSION['doctor_name']); ?></p>
                 <button class="doctor_log_out"  id="doctor_logout"> <i class="ri-logout-box-r-line"></i> Logout</button>
 
             </div>

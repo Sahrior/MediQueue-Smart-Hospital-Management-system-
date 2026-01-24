@@ -8,13 +8,20 @@ body {
     font-family: "Segoe UI", system-ui, sans-serif;
     background: #f4f6fa;
     color: #222;
+}
+
+.one {
     min-height: 100vh;
-    display: flex;
+    width: 100%;
+    display: flex;         
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 
 .left {
-    flex: 1 1 500px;
+    flex: 1;
+    width: 50%;
     background: linear-gradient(135deg, #2b7a78, #3aafa9);
     padding: 40px;
     display: flex;
@@ -72,7 +79,8 @@ body {
 
 
 .right {
-    flex: 1 1 500px;
+    flex: 1;
+    width: 50%;
     background: #f0f2f5;
     display: flex;
     justify-content: center;

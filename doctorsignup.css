@@ -249,3 +249,18 @@ hr {
         justify-content: center;
     }
 }
+
+/* Apply the same style as inputs to the dropdown */
+.box select {
+    width: 100%;
+    padding: 10px; /* Adjust to match your input padding */
+    border: 1px solid #ccc; /* Match your input border */
+    border-radius: 5px; /* Match your input radius */
+    background-color: white;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    height: 40px;
+}
+
+
